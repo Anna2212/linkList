@@ -1,0 +1,19 @@
+.inputAdd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15em;
+    height: 5em;
+    margin:10px;
+  }
+  .save{
+    background: #FF6D1A;
+    border: 1px solid rgb(189, 77, 17);
+    color: #ffffff;
+    height:30px;
+    width:80px;
+  }
+  .save:hover{
+    background: rgb(196, 80, 18);
+    border: 1px solid rgb(143, 55, 11);
+  }

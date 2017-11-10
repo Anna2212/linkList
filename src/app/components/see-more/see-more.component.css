@@ -1,0 +1,17 @@
+.info{
+    margin: 20px;
+    color:#ffffff;
+    font-weight: bold;
+  }
+  .back{
+    width: 80px;
+    height: 30px;
+    background: rgb(255, 0, 85);
+    border: 1px solid rgb(194, 0, 65);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .back:hover{
+    background: rgb(155, 0, 52);
+    border: 1px solid rgb(134, 0, 47);
+  }

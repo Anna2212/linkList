@@ -1,0 +1,17 @@
+<linkaAdder-app (submit)="addLink($event)"></linkaAdder-app>
+<div>
+  <ul class="links">
+    <li class="linksli" appMove *ngFor="let link of links"
+      [class.selected]="link === selectedLink" [ngClass]="{'marked': link.liked}">
+      <div class="title">
+        <span class="badge">{{link.titleL}}</span> 
+        <span>{{link.link}}</span>
+      </div>
+      <button (click)="toggle_class(link.liked = !link.liked)" class="btn like">Like</button>
+      <button (click)="onSelect(link)" class="btn change">Change</button>
+      <button (click)="gotoDetail(link)" class="btn more">See more</button>
+      <button (click)="removeItem(link)" class="btn del">X</button>
+    </li>
+    <linkaAdder-app *ngIf="editMode" [linkItem]="selectedLink" (submit)="updateLink(selectedLink, $event)"></linkaAdder-app>
+  </ul>
+</div>
